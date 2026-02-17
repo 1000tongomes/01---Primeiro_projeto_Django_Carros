@@ -1,0 +1,15 @@
+
+<html>
+    <head>
+        <title> Meus carros </title>
+    </head>
+    {% block content %}
+    <body>
+        {% for car in cars %}
+           
+             <h3>Carro {{forloop.counter}}: {{car.brand}} - {{car.model}} - {{car.factory_year}}</h3>
+            
+        {% endfor %}
+    </body>
+    {% endblock %}
+</html>
