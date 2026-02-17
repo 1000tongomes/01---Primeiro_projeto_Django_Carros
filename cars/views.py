@@ -7,4 +7,15 @@ from django.http import HttpResponse
 
 
 def cars_view(request):
-    return HttpResponse('Meus Carros 1')
+    html = '''
+    <html>
+        <head>
+            <title> Meus carros </title>
+        </head>
+        <body>
+            <h1>Carros da PycodeBr</h1>
+             <h3>Só carro top!</h3>
+        </body>
+    </html>
+'''
+    return HttpResponse(html)
