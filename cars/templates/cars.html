@@ -118,7 +118,7 @@
             {% if car.photo %}
               <img src="{{ car.photo.url }}" alt="{{ car.model }} - {{ car.brand }}">
             {% else %}
-              <p>Sem imagem disponível</p>
+              <p class = "no-photo">Foto não disponível</p>
             {% endif %}
           
             <h2>{{ car.brand }} {{ car.model }}</h2>
